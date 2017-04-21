@@ -1,0 +1,48 @@
+<svg height="718" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="718" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">13 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">├── UNMET PEER DEPENDENCY react@^0.14.0 || ^15.0.0-0</tspan>
+<tspan x="10" y="90">└─┬ styled-components@1.4.5 </tspan>
+<tspan x="10" y="106">  ├─┬ buffer@5.0.6 </tspan>
+<tspan x="10" y="122">  │ ├── base64-js@1.2.0 </tspan>
+<tspan x="10" y="138">  │ └── ieee754@1.1.8 </tspan>
+<tspan x="10" y="154">  ├─┬ css-to-react-native@1.0.6 </tspan>
+<tspan x="10" y="170">  │ ├─┬ css-color-list@0.0.1 </tspan>
+<tspan x="10" y="186">  │ │ └── css-color-names@0.0.1 </tspan>
+<tspan x="10" y="202">  │ └─┬ nearley@2.8.0 </tspan>
+<tspan x="10" y="218">  │   ├─┬ nomnom@1.6.2 </tspan>
+<tspan x="10" y="234">  │   │ ├── colors@0.5.1 </tspan>
+<tspan x="10" y="250">  │   │ └── underscore@1.4.4 </tspan>
+<tspan x="10" y="266">  │   ├── railroad-diagrams@1.0.0 </tspan>
+<tspan x="10" y="282">  │   └─┬ randexp@0.4.5 </tspan>
+<tspan x="10" y="298">  │     ├── discontinuous-range@1.0.0 </tspan>
+<tspan x="10" y="314">  │     └── ret@0.1.14 </tspan>
+<tspan x="10" y="330">  ├─┬ fbjs@0.8.12 </tspan>
+<tspan x="10" y="346">  │ ├── core-js@1.2.7 </tspan>
+<tspan x="10" y="362">  │ ├─┬ isomorphic-fetch@2.2.1 </tspan>
+<tspan x="10" y="378">  │ │ ├─┬ node-fetch@1.6.3 </tspan>
+<tspan x="10" y="394">  │ │ │ ├─┬ encoding@0.1.12 </tspan>
+<tspan x="10" y="410">  │ │ │ │ └── iconv-lite@0.4.15 </tspan>
+<tspan x="10" y="426">  │ │ │ └── is-stream@1.1.0 </tspan>
+<tspan x="10" y="442">  │ │ └── whatwg-fetch@2.0.3 </tspan>
+<tspan x="10" y="458">  │ ├─┬ loose-envify@1.3.1 </tspan>
+<tspan x="10" y="474">  │ │ └── js-tokens@3.0.1 </tspan>
+<tspan x="10" y="490">  │ ├── object-assign@4.1.1 </tspan>
+<tspan x="10" y="506">  │ ├─┬ promise@7.1.1 </tspan>
+<tspan x="10" y="522">  │ │ └── asap@2.0.5 </tspan>
+<tspan x="10" y="538">  │ ├── setimmediate@1.0.5 </tspan>
+<tspan x="10" y="554">  │ └── ua-parser-js@0.7.12 </tspan>
+<tspan x="10" y="570">  ├─┬ inline-style-prefixer@2.0.5 </tspan>
+<tspan x="10" y="586">  │ ├── bowser@1.6.1 </tspan>
+<tspan x="10" y="602">  │ └── hyphenate-style-name@1.0.2 </tspan>
+<tspan x="10" y="618">  ├── is-function@1.0.1 </tspan>
+<tspan x="10" y="634">  ├─┬ is-plain-object@2.0.1 </tspan>
+<tspan x="10" y="650">  │ └── isobject@1.0.2 </tspan>
+<tspan x="10" y="666">  ├── prop-types@15.5.8 </tspan>
+<tspan x="10" y="682">  └─┬ supports-color@3.2.3 </tspan>
+<tspan x="10" y="698">    └── has-flag@1.0.0</tspan>
+</text>
+</svg>
