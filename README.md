@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-styled-components/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-styled-components/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-styled-components/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-styled-components/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-styled-components/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-styled-components/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-styled-components/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-styled-components/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-styled-components/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-styled-components/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-styled-components/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-styled-components/build/coverage.html/index.html)
 
@@ -35,48 +35,12 @@
 ```json
 
 {
-    "name": "styled-components",
-    "version": "1.4.5",
-    "description": "Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress 💅",
-    "main": "lib/index.js",
-    "typings": "typings/styled-components.d.ts",
-    "jsnext:main": "dist/styled-components.es.js",
-    "module": "dist/styled-components.es.js",
-    "scripts": {
-        "build": "npm run build:lib && npm run build:dist && npm run build:flow",
-        "prebuild:lib": "rm -rf lib/*",
-        "build:lib": "babel --out-dir lib src",
-        "build:flow": "flow-copy-source -v -i '{**/test/*.js,**/*.test.js}' src lib",
-        "prebuild:umd": "rm -rf dist/*",
-        "prebuild:dist": "rm -rf dist/*",
-        "build:dist": "rollup -c && rollup -c --environment PRODUCTION",
-        "build:watch": "npm run build:lib -- --watch",
-        "test": "mocha \"./src/**/*.test.js\" --require babel-core/register --timeout 5000",
-        "test:watch": "npm run test -- --watch",
-        "flow": "flow check",
-        "lint": "eslint src",
-        "tslint": "tslint typings/*.ts native/*.ts",
-        "typescript": "tsc ./typings/styled-components-test.tsx ./typings/styled-components-native-test.tsx ./typings/themed-tests/mytheme-styled-components-test.tsx --noEmit --jsx react --target es6 --module es2015 --moduleResolution node",
-        "prepublish": "npm run build",
-        "lint-staged": "lint-staged",
-        "dev": "node example/devServer.js"
+    "author": {
+        "name": "Glen Maddern"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/styled-components/styled-components.git"
-    },
-    "keywords": [
-        "react",
-        "css",
-        "css-in-js",
-        "styled-components"
-    ],
-    "author": "Glen Maddern",
-    "license": "MIT",
     "bugs": {
         "url": "https://github.com/styled-components/styled-components/issues"
     },
-    "homepage": "https://styled-components.com",
     "dependencies": {
         "buffer": "^5.0.2",
         "css-to-react-native": "^1.0.6",
@@ -87,6 +51,7 @@
         "prop-types": "^15.5.4",
         "supports-color": "^3.1.2"
     },
+    "description": "Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress 💅",
     "devDependencies": {
         "@types/react": "^0.14.55",
         "@types/react-native": "^0.37.5",
@@ -140,16 +105,72 @@
         "tslint": "^4.3.1",
         "typescript": "^2.1.5"
     },
-    "peerDependencies": {
-        "react": "^0.14.0 || ^15.0.0-0"
+    "directories": {},
+    "dist": {
+        "shasum": "20c52f6355e28c7f20a99c05c6d5108a4858cfba",
+        "tarball": "https://registry.npmjs.org/styled-components/-/styled-components-1.4.5.tgz"
     },
+    "gitHead": "a060e88cb3b0f45c2e7637ea3d2e900a3d71099f",
+    "homepage": "https://styled-components.com",
+    "jsnext:main": "dist/styled-components.es.js",
+    "keywords": [
+        "react",
+        "css",
+        "css-in-js",
+        "styled-components"
+    ],
+    "license": "MIT",
     "lint-staged": {
         "*.js": [
             "eslint --fix",
             "git add"
         ]
     },
-    "pre-commit": "lint-staged"
+    "main": "lib/index.js",
+    "maintainers": [
+        {
+            "name": "geelen"
+        },
+        {
+            "name": "mxstbr"
+        },
+        {
+            "name": "philplckthun"
+        }
+    ],
+    "module": "dist/styled-components.es.js",
+    "name": "styled-components",
+    "optionalDependencies": {},
+    "peerDependencies": {
+        "react": "^0.14.0 || ^15.0.0-0"
+    },
+    "pre-commit": "lint-staged",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/styled-components/styled-components.git"
+    },
+    "scripts": {
+        "build": "npm run build:lib && npm run build:dist && npm run build:flow",
+        "build:dist": "rollup -c && rollup -c --environment PRODUCTION",
+        "build:flow": "flow-copy-source -v -i '{**/test/*.js,**/*.test.js}' src lib",
+        "build:lib": "babel --out-dir lib src",
+        "build:watch": "npm run build:lib -- --watch",
+        "dev": "node example/devServer.js",
+        "flow": "flow check",
+        "lint": "eslint src",
+        "lint-staged": "lint-staged",
+        "prebuild:dist": "rm -rf dist/*",
+        "prebuild:lib": "rm -rf lib/*",
+        "prebuild:umd": "rm -rf dist/*",
+        "prepublish": "npm run build",
+        "test": "mocha \"./src/**/*.test.js\" --require babel-core/register --timeout 5000",
+        "test:watch": "npm run test -- --watch",
+        "tslint": "tslint typings/*.ts native/*.ts",
+        "typescript": "tsc ./typings/styled-components-test.tsx ./typings/styled-components-native-test.tsx ./typings/themed-tests/mytheme-styled-components-test.tsx --noEmit --jsx react --target es6 --module es2015 --moduleResolution node"
+    },
+    "typings": "typings/styled-components.d.ts",
+    "version": "1.4.5",
+    "bin": {}
 }
 ```
 
